@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap');
+
+@font-face {
+    font-family: 'distant_galaxyregular';
+    src: url('DISTGRG_-webfont.eot');
+    src: url('DISTGRG_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('DISTGRG_-webfont.woff2') format('woff2'),
+         url('DISTGRG_-webfont.woff') format('woff'),
+         url('DISTGRG_-webfont.ttf') format('truetype'),
+         url('DISTGRG_-webfont.svg#distant_galaxyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+html, body{
+  background: #fff;
+  background-image: url(https://i.imgur.com/GoxS27D.jpg);
+}
+
+h1 {
+  /* font-family: 'Aldrich', sans-serif; */
+  font-family: 'distant_galaxyregular';
+}
+
+body{
+  counter-reset:section;
+  text-align:center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/*Esto es del formulario ! */
+form{
+  margin-top:25px;
+  display:inline-block;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    font-family: 'distant_galaxyregular';
+}
+
+tr{
+    color:  rgb(255, 255, 255);
+}
+
+th{
+    vertical-align: middle;
+}
+
+.nav {
+  justify-content: center;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+ .container{
+  position:relative;
+  top:30px;
+}
+
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 10vh;
+  top: -25px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1;
+}
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 800px;
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 500%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  perspective: 400px;
+  text-align: justify;
+  opacity: 1;
+}
+
+.crawl {
+  position: relative;
+  top: 99999px;
+  transform-origin: 50% 100%;
+  animation: crawl 90s linear;
+}
+
+.crawl > .title {
+  font-size: 90%;
+  text-align: center;
+}
+
+.crawl > .title h1 {
+  margin: 0 0 100px;
+  text-transform: uppercase;
+}
+
+.table{
+    font-family: 'distant_galaxyregular';
+    font-size: 18px;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.mobile {
+  display: none;
+}
+.mobileV {
+  display: none;
+}
+
+#planets {
+  background-image: url(https://imgnooz.com/sites/default/files/wallpaper/movies/60194/star-wars-wallpapers-60194-3219467.jpg);
+}
+#vehicules {
+  background-image: url(http://www.larutadelsorigens.cat/filelook/full/10/100735/star-wars-desktop-wallpaper.jpg);
+}
+#characters {
+  background-image: url(https://wallpaperplay.com/walls/full/a/0/5/124143.jpg);
+}
+
+
+#clone {
+  display: none;
+}
+#general {
+  display: none;
+}
+
+#b2b {
+  margin-top: 70px;
+  margin-left: -50px;
+  height: 100px;
+
+}
+
+#button{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  font-family: 'distant_galaxyregular';
+}
+
+#prelude{
+	opacity: 0;
+	color: #1B7DEB;
+	text-align: center;
+	margin-top: 10%;
+	text-shadow: 0 0 1px #1B7DEB;
+	font-size: 20px;
+    -webkit-animation-name: prelude;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 1;
+    -moz-animation-name: prelude;
+    -moz-animation-timing-function: linear;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: 1;
+    -o-animation-name: prelude;
+    -o-animation-timing-function: linear;
+    -o-animation-duration: 4s;
+    -o-animation-iteration-count: 1;
+}
+
+@keyframes prelude {
+  from{opacity: 0;}
+  20%{opacity: 1;}
+	80%{opacity: 1;}
+	to{opacity: 0;}
+}
+
+@keyframes crawl {
+
+	0% {
+    top: 650px;
+    transform: rotateX(35deg)  translateZ(0);
+  }
+	80% {
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+  95% {
+    top: -7000px;
+    transform: rotateX(25deg) translateZ(-3000px);
+  }
+  100%{
+    top: -7500px;
+    transform: rotateX(25deg) translateZ(-3500px);
+    opacity: 0;
+  }
+
+}
+
+
+@media only screen and (max-width: 1150px) {
+  #characters {
+    background-image: url(http://www.larutadelsorigens.cat/filelook/full/69/694580/star-wars-phone-wallpaper-hd.jpg);
+  }
+  #index {
+
+    background-image: url(https://i.pinimg.com/originals/66/28/65/6628651b70ed54833634b056f73c81f4.webp);
+  }
+
+  #contact {
+    background-image: url(https://i.pinimg.com/originals/66/28/65/6628651b70ed54833634b056f73c81f4.webp);
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width:560px){
+
+  p{
+    color: black;
+  }
+
+  #episode {
+    color: black;
+  }
+  #characters {
+    background-image: url(https://wallup.net/wp-content/uploads/2015/12/299949-Star_Wars-stormtrooper-helmet-minimalism.jpg);
+    background-position: center;
+  }
+
+  #index {
+
+    background-image: url(https://i.pinimg.com/originals/66/28/65/6628651b70ed54833634b056f73c81f4.webp);
+    background-position: center;
+  }
+
+  #contact {
+
+    background-image: url(https://i.pinimg.com/originals/66/28/65/6628651b70ed54833634b056f73c81f4.webp);
+    background-position: center;
+  }
+
+
+}
+
+@media only screen and (max-width:767px){
+
+  .planets {
+    display: none;
+  }
+  .vehicules1 {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    padding-top: 50%;
+    color: lightblue;
+  }
+
+  .mobileV {
+    display: block;
+    padding-top: 50%;
+    color: lightblue;
+  }
+  #planets {
+    background-position: center;
+  }
+  #vehicules {
+    background-position: center;
+  }
+  #starship1 {
+    display: none;
+  }
+
+  #planets1 {
+    display: none;
+  }
+  #general {
+    display: block;
+    height: 300px;
+    padding-left: 80px;
+  }
+
+  #clone {
+    display: block;
+    padding-left: 110px;
+  }
+
+
+}
